@@ -2063,7 +2063,7 @@
     const total = selectedServices.reduce((s, x) => s + x.price, 0);
 
     const lista = selectedServices
-      .map(s => '   - ' + s.name + ': ' + formatBRL(s.price))
+      .map(s => '   - ' + s.name)
       .join('\n');
 
     // Mensagem com emojis em Unicode (sem quadradinhos)
