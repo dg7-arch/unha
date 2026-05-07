@@ -2034,7 +2034,7 @@
     }
 
     empty.style.display = 'none';
-    totalBox.style.display = 'flex';
+    totalBox.style.display = 'none';
 
     let total = 0;
     selectedServices.forEach((s, i) => {
@@ -2044,7 +2044,6 @@
       li.innerHTML =
         '<span class="order-item-bullet"></span>' +
         '<span class="order-item-name">' + s.name + '</span>' +
-        '<span class="order-item-price">' + formatBRL(s.price) + '</span>' +
         '<button class="btn-remove" onclick="removeService(' + i + ')" title="Remover" aria-label="Remover">✕</button>';
       list.appendChild(li);
     });
@@ -2072,7 +2071,6 @@
       'Ola, Luysa! Vim pelo site Star Nails by Lu e gostaria de agendar um horario.\n\n' +
       '*Servicos escolhidos:*\n' +
       lista + '\n\n' +
-      '*Total estimado: ' + formatBRL(total) + '*\n\n' +
       'Poderia me informar a disponibilidade?';
 
     // encodeURIComponent garante compatibilidade total — sem emojis para evitar interrogacoes
