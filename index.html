@@ -2068,10 +2068,10 @@
 
     // Mensagem com emojis em Unicode (sem quadradinhos)
     const msg =
-      'Ola, Luysa! Vim pelo site Star Nails e gostaria de agendar um horario.\n' +
-      '*Servicos escolhidos:*\n' +
-      lista + '\n' +
-      'Tenho interesse e queria mais informacoes, por favor.';
+      'Olá, Luysa! Vim pelo site Star Nails e gostaria de agendar um horário.\n\n' +
+      '*Serviços escolhidos:*\n' +
+      lista + '\n\n' +
+      'Tenho interesse e queria mais informações, por favor.';
 
     // encodeURIComponent garante compatibilidade total — sem emojis para evitar interrogacoes
     window.open('https://wa.me/' + phone + '?text=' + encodeURIComponent(msg), '_blank');
